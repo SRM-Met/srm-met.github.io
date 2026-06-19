@@ -3,7 +3,54 @@ font-family: Arial, Helvetica, sans-serif;
 margin:0;
 background:#f5f7fa;
 color:#333;
+line-height:1.6;
 }
+
+/* Hero Section */
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)),
+url('../images/banner.jpg');
+
+```
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:100px 20px;
+```
+
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+margin:10px 0;
+font-weight:normal;
+}
+
+.hero h3{
+margin:10px 0;
+}
+
+.hero p{
+font-size:1.2rem;
+}
+
+/* Logo */
+
+.logo{
+width:180px;
+height:auto;
+margin-bottom:20px;
+}
+
+/* Header */
 
 header{
 background:#003366;
@@ -26,10 +73,15 @@ header p{
 margin:8px 0;
 }
 
+/* Navigation */
+
 nav{
 background:#00509e;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav a{
@@ -41,6 +93,8 @@ font-weight:bold;
 
 nav a:hover
 
+/* Main Layout */
+
 .container{
 width:90%;
 max-width:1200px;
@@ -51,11 +105,18 @@ margin:auto;
 padding:30px 0;
 }
 
+/* Cards */
+
 .card{
 background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.10);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-4px);
 }
 
 .grid{
@@ -63,6 +124,8 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
+
+/* Faculty Cards */
 
 .profile-card{
 text-align:center;
@@ -86,13 +149,13 @@ margin-bottom:5px;
 line-height:1.5;
 }
 
-footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+/* Lists */
+
+ul{
+line-height:1.8;
 }
+
+/* Tables */
 
 table{
 width:100%;
@@ -114,12 +177,42 @@ background:#00509e;
 color:white;
 }
 
+/* Images */
+
 img{
 max-width:100%;
 }
 
+/* Footer */
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Responsive Design */
+
 @media screen and (max-width:768px){
 
+```
+.hero{
+    padding:60px 15px;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero h2{
+    font-size:1.3rem;
+}
+
+.hero h3{
+    font-size:1.1rem;
+}
 
 nav a{
     display:block;
@@ -135,24 +228,9 @@ header h1{
     height:190px;
 }
 
-
-}
 .logo{
-    width:180px;
-    height:auto;
-    margin-bottom:20px;
+    width:120px;
 }
-.hero{
-    background:
-    linear-gradient(rgba(0,0,0,0.35),
-                    rgba(0,0,0,0.35)),
-    url('../images/banner.jpg');
+```
 
-    background-size:cover;
-    background-position:center;
-
-    color:white;
-    text-align:center;
-
-    padding:100px 20px;
 }
