@@ -120,7 +120,7 @@ max-width:100%;
 
 @media screen and (max-width:768px){
 
-```
+
 nav a{
     display:block;
     margin:10px 0;
@@ -134,11 +134,25 @@ header h1{
     width:150px;
     height:190px;
 }
-```
+
 
 }
 .logo{
     width:180px;
     height:auto;
     margin-bottom:20px;
+}
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.35),
+                    rgba(0,0,0,0.35)),
+    url('../images/banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:100px 20px;
 }
