@@ -245,3 +245,12 @@ header h1{
 
 
 }
+.gallery img,
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.card img{
+margin-bottom:10px;
+}
