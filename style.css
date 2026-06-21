@@ -217,22 +217,25 @@ footer{
 
     /* Compact Menu */
 
-    nav{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:8px;
-        padding:10px;
-        text-align:center;
-    }
+   nav{
+    display:flex;
+    overflow-x:auto;
+    white-space:nowrap;
+    padding:10px;
+    gap:10px;
+    justify-content:flex-start;
+    -webkit-overflow-scrolling:touch;
+}
 
     nav a{
-        display:block;
-        margin:0;
-        padding:8px;
-        background:#0066cc;
-        border-radius:5px;
-        font-size:14px;
-    }
+    display:inline-block;
+    flex:0 0 auto;
+    margin:0;
+    padding:8px 12px;
+    background:none;
+    border-radius:0;
+    font-size:14px;
+}
 
     .container{
         width:95%;
