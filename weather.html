@@ -139,10 +139,39 @@ The SRM-Met Weather Dashboard provides weather monitoring and forecasting resour
 
 </section>
 
+
 <section class="section">
 
 <div class="card">
 
+<h2>WWLLN VLF Spectrogram – SRMIST Chennai Station</h2>
+
+<p>
+Real-time VLF spectrogram recorded by the SRMIST Chennai station of the World Wide Lightning Location Network (WWLLN). The image refreshes automatically every minute.
+</p>
+
+<img
+    id="wwllnSpectrogram"
+    src="https://wwlln.net/spectra/chennai/vlf.png"
+    alt="WWLLN Chennai VLF Spectrogram"
+    style="width:100%; max-width:1100px; display:block; margin:auto; border:1px solid #ccc;">
+
+</div>
+
+</section>
+
+<script>
+function refreshSpectrogram() {
+    const img = document.getElementById("wwllnSpectrogram");
+    img.src = "https://wwlln.net/spectra/chennai/vlf.png?t=" + new Date().getTime();
+}
+
+// Refresh every 60 seconds
+setInterval(refreshSpectrogram, 60000);
+</script>
+
+
+    
 <h2>Interactive Weather Map</h2>
 
 <iframe
